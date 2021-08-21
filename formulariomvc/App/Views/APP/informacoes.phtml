@@ -1,0 +1,46 @@
+<div class="col-md-6">
+			<div class="row mb-2">
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<form method="get" action="/informacoes">
+								<div class="input-group mb-3">
+									<input type="text" name="pesquisarPor" class="form-control" placeholder="Digite seu nome">
+									<div class="input-group-append">
+										<button class="btn btn-primary" type="submit">Procurar</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php foreach($this->view->usuarios as $indice_arr => $usuario) { ?>
+				<div class="row mb-2">
+					<div class="col">
+						<div class="card">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-md-6">
+										<?= $usuario['nome'] ?>
+										<hr>
+										<?= $usuario['email'] ?>
+										<hr>
+										<?= $usuario['end'] ?>
+										<hr>
+										<?= $usuario['fone'] ?>
+										<hr>
+										<?= $usuario['cpf'] ?>
+										<hr>
+										<?= $usuario['identidade'] ?>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php } ?>

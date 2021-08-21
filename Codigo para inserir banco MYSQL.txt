@@ -1,0 +1,14 @@
+criar base de dados chamada db_form
+e selecionar utf_8_unicode_ci
+
+depois digitar codigo SQL abaixo para inserir tabela:
+
+create table usuarios (
+    id int not null primary key AUTO_INCREMENT,
+    nome varchar(100) not null,
+    email varchar(150) not null,
+    end varchar(250) not null,
+    fone varchar(15) not null,
+    cpf varchar (15) not null,
+    identidade varchar(15) not null
+);
